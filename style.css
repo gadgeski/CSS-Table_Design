@@ -90,6 +90,7 @@ body {
   .table thead {
     display: none;
   }
+
   .table tbody tr {
     display: block;
     margin-bottom: 1rem;
@@ -113,7 +114,7 @@ body {
 
   .table tbody td::before {
     font-size: 0.8rem;
-    content: after(data-label);
+    content: attr(data-label);
     font-weight: bold;
     position: absolute;
     left: 1rem;
