@@ -53,10 +53,10 @@ body {
 .table td:last-child {
   border-right: 0;
 }
-
+/* thead 横一列背景色 */
 .table thead tr {
   background-color: #4a69b8;
-  color: #fff;
+  color: #b0c4de;
 }
 
 .table thead tr {
@@ -97,8 +97,8 @@ body {
   }
 
   .table tbody th {
-    background-color: #4a69b8;
-    color: #fff;
+    background-color: #fff;
+    color: #b0c4de;
     display: block;
     border-right: none;
     text-align: center;
