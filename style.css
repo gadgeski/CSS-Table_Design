@@ -41,3 +41,37 @@ body {
   max-width: 650px;
   margin: 0 auto;
 }
+
+.table th,
+.table td {
+  padding: 1rem;
+  border-right: 1px solid #fff;
+  vertical-align: middle;
+}
+
+.table th:last-child,
+.table td:last-child {
+  border-right: 0;
+}
+
+.table thead tr {
+  background-color: #4a69b8;
+  color: #fff;
+}
+
+.table thead tr {
+  text-align: center;
+}
+
+.table tobody tr {
+  border-bottom: 1px solid #fff;
+  background-color: #f1f3f8;
+}
+
+.table tbody tr:last-child {
+  border: none;
+}
+
+.table tbody th {
+  width: 25%;
+}
