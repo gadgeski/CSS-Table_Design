@@ -75,3 +75,60 @@ body {
 .table tbody th {
   width: 25%;
 }
+
+.table tbody .price {
+  width: 25%;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+  .table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .table tbody th {
+    background-color: #4a69b8;
+    color: #fff;
+    display: block;
+    border-right: none;
+    text-align: center;
+  }
+
+  .table tbody td {
+    border-bottom: 1px solid #fff;
+    display: block;
+    text-align: right;
+    position: relative;
+    border-right: none;
+  }
+
+  .table tbody td::before {
+    font-size: 0.8rem;
+    content: after(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 1rem;
+  }
+
+  .table td:last-child {
+    border-bottom: 0;
+  }
+
+  .table tbody th,
+  .table tobody .price {
+    width: 100%;
+  }
+
+  .table .text {
+    font-size: 0.7rem;
+  }
+}
